@@ -1,3 +1,8 @@
+body {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .grid-container {
   display: grid;
   column-gap: 30px;
@@ -12,6 +17,12 @@
   grid-row-start: 1;
   grid-row-end: 2;
   background-color: purple;
+}
+
+.item-1 > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .item-2 {
@@ -60,4 +71,21 @@
   grid-row-start: 3;
   grid-row-end: 4;
   background-color: pink;
+}
+
+.headline {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  bottom: 30px;
+  line-height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 10px;
+}
+
+.headline:hover {
+  background-color: rgba(255, 255, 255, 1);
+  cursor: pointer;
 }
