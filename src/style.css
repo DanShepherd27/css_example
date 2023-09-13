@@ -73,16 +73,37 @@ body {
   background-color: pink;
 }
 
-.headline {
-  background-color: rgba(255, 255, 255, 0.8);
+.title-text {
+  background-color: rgba(89, 133, 228, 0.8);
+  color: white;
   position: relative;
-  bottom: 30px;
+  bottom: 60px;
   line-height: 30px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   font-family: Arial, Helvetica, sans-serif;
   padding-left: 10px;
+  padding-right: 10px;
+  width: fit-content;
+}
+
+.title-text:hover {
+  background-color: rgba(89, 133, 228, 1);
+  cursor: pointer;
+}
+
+.headline {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  bottom: 60px;
+  line-height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .headline:hover {
